@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group 7 Grade 8-Ecclesiastes - HomePage</title>
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Animated header and text */
+        header {
+            animation: fadeIn 2s ease-in-out;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            animation: slideIn 1.5s ease-out;
+            margin: 0;
+        }
+
+        h2, h4 {
+            animation: slideIn 2s ease-out;
+        }
+
+        .overview-bar {
+            animation: fadeIn 2s ease-in;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            animation: pulse 1.5s infinite;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Centering content */
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="essential.html">Essential Elements</a>
+            <a href="interactive.html">Interactive Elements</a>
+            <a href="watercycle.html">Water Cycle</a>
+            <a href="reference.html">Reference Page</a>
+        </nav>
+    </h1>
+</header>
+
+<h1 class="center"><marquee> Welcome to Aqua Science!</marquee></h1>
+
+<header>
+    <div class="overview-bar">
+        <h1 class="center"> Information About Our Website</h1>
+        <h4 class="center"> Our website includes the essential elements and compounds that we, as living things, need to exist.<br>
+        Learn about the water cycle and at the end, take a quiz in order to see what you have learned through our website!</h4>
+    </div>
+</header>
+
+<main>
+    <h2 class="center">Purpose of our Website</h2>
+    <p class="center"><strong> The purpose of our website is to provide information on topics like the essential elements and water cycle of our world,<br>
+    both of which are needed components that sustain all life on Earth.<br> Explore how these elements interact in our world and ecosystem,<br>
+    and test what you learn here with our interactive quiz.<br> Dive straight into these topics through the other pages of our website!<strong></p>
+</main>
+
+</body>
+</html>
